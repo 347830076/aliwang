@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像热区</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #rect{
+            display: inline-block;
+            position: absolute;
+            left: 338px;
+            top: 147px;
+            width: 120px;
+            height: 450px;
+            border: 1px solid #f00;
+            z-index: 1;
+        }
+        #circle{
+            display: inline-block;
+            position: absolute;
+            left: 150px;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #f00;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/onepiec.jpg" width="800px" title="海贼王" usemap="#map" />
+
+    <map id="map" name="map">
+        <area id="rect" shape="rect" coords="338,147,458,597" href="./lufei.png" />
+        <area id="circle" shape="circle" coords="225,75,75" href="./个人介绍.html" target="_blank" />
+    </map> 
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    rel: 规定当前文档与被链接文档之间的关系。
+    href: 规定被链接文档的位置。
+    type：规定被链接文档的 MIME 类型。
+    -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
+    <!-- <link rel="shortcut icon" href="./lufei.png" type="image/x-icon"/> -->
+    <title>表格</title>
+</head>
+<body>
+    <table border="1" width="500" align="center" cellspacing="0" cellpadding="10px">
+        <caption>超级前端一班</caption>
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JS</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>小明</td>
+            <td>李四</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">合并列colspan</td>
+            <!-- <td>单元格2</td> -->
+            <td rowspan="2" align="center">合并行单元格3</td>
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <!-- <td>单元格3</td> -->
+        </tr>
+    </table>
+</body>
+</html>
